@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgba(255, 0, 0, 0.835);
+  --primary-color-darker: rgba(96, 1, 1, 0.886);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em; 
+  background: url('../../cromo.gif');
+}
+
+._container {
+  width: 700px;
+  height: 500px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.438);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+._timer {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: rgb(26, 26, 24), 53, 48);
+}
+
+h1 img {
+  width: 35px;
+  height: 35px;
+}
+
+
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: rgb(192, 192, 192);
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+button {
+  background-color: var(--primary-color-darker);
+  color: rgb(238, 222, 222);
+  border-radius: 8px;
+  width: 80px;
+  height: 30px;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: rgba(23, 23, 22, 0.709);
+  color: rgb(171, 27, 27);
+  font-weight: bolder;
+  transition: 1s;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+.relogio {
+  font-size: 6em;
+  color: rgb(19, 19, 19);
+}
+
+.pausado {
+  color: red;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+      width: auto;      
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body {
+      width: auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+      width: auto;
+  }
+}
+
+
+
